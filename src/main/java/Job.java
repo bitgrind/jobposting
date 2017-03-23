@@ -7,13 +7,20 @@ public class Job{
   private String jobDesc;
   private String jobContact;
   private static List<Job> instances = new ArrayList<Job>();
+  private static List<City> cities = new ArrayList<City>();
 
 
-  public Job(String name){
+  public Job(String name, String desc, String contact){
     jobTitle = name;
+    jobDesc = desc;
+    jobContact = contact;
     instances.add(this);
     jobId = instances.size();
     //mDesc;
+  }
+
+  public void addCity(City city){
+    cities.add(city);
   }
 
   public int getId(){

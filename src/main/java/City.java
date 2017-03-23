@@ -5,7 +5,7 @@ public class City {
   private String cityTitle;
   private static ArrayList<City> instances = new ArrayList<City>();
   private int cityId;
-  private List<Job> cityJobs;
+  private static List<Job> cityJobs;
 
   public City(String title){
     cityTitle = title;
